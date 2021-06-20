@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;1,300;1,700&display=swap');
+
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    --linear-color: linear-gradient(
+        90deg, #31d35c 0%, #2bb7da 100%);
+}
+
+
+body {
+    font-family: 'Public Sans';
+    font-size: 16px;
+    background-color: hsl(0, 0%, 98%);
+} 
+
+
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/* HEADER SECTION */
+
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    height: 5.5rem;
+    z-index: 5;
+}
+
+.header__img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+
+.header__list {
+    margin-top: 0;
+    width: auto;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    text-align: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.header__link {
+    display: block;
+    height: 100%;
+    line-height: 4.5rem;
+    position: relative;
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.header__link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.22rem;
+    bottom: 0;
+    background: linear-gradient(
+90deg
+, #31d35c 0%, #2bb7da 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.header__link:hover {
+    color: #2d314d;
+}
+
+
+.header__link:hover::before {
+    opacity: 1;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.gradient-button {
+    border: none;
+    border-radius: 5rem;
+    background:var(--linear-color);
+    color: white;
+    width: 10rem;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+
+.gradient-button:hover {
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+    90deg, #32b5e9 0%, #43c54d 100%);  
+    opacity: 0.8;    
+}
+
+
+.gradient-button:active {
+    color: #333;
+    transition: 0.6s;
+}
+
+
+
+
+/* NEXT GENERATION DIGITAL BANKING SECTION */
+
+.section-first {
+    background-color: #fafafa;
+}
+
+.section_content-first {
+    display: flex;
+    gap: 5rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: stretch;
+    max-width: 95%;
+    max-height: 662px;
+    margin-left: auto;
+}
+
+
+.section-text {
+    max-width: 36%;
+}
+
+
+.first-title {
+    color: #2d314d;
+    font-weight: 100;
+    font-size: 3rem;
+    margin: 19px 0;
+    text-align: left;
+}
+
+
+.section_p {
+    font-size: 1rem;
+    color: #9698a6;
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+}
+
+
+.touhid-btn {
+    border: none;
+    border-radius: 5rem;
+    background:var(--linear-color);
+    color: white;
+    width: 10rem;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.touhid-btn:hover {
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+    90deg, #32b5e9 0%, #43c54d 100%);  
+    opacity: 0.8; 
+}
+
+
+.touhid-btn:active {
+    color: #333;
+    transition: 0.6s;
+}
+
+
+.section-hero {
+    flex: 0 0 60%;
+    max-width: 60%;
+    height: 662px;
+    width: 100%;
+    text-align: center;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-size: auto;
+    position: relative;
+    background-position: 10% 70%;
+}
+
+
+
+.section-mockup {
+    position: absolute;
+    width: auto;
+    margin-top: 0;
+    top: -118px;
+    left: 132px;
+}
+
+
+
+/* EASYBANK SECTION */
+
+.section-two {
+    min-height: 600px;
+    background-color: #f3f4f6;
+    
+}
+
+.section-header {
+    max-width: 700px;
+}
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #2d314d;
+    margin: 1rem 0;
+}
+
+
+
+.section-p {
+    color: #9698a6;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.box {
+    max-width: 350px;
+}
+
+
+.section-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+}
+
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    width: var(--containers-width);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2em;
+    width: 90%;
+    margin: auto;
+    padding-top: 95px;
+}
+
+.box-body {
+    margin-top: 2rem;
+}
+
+
+.box-title {
+    color: #2d314d;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.box-text {
+    font-size: 1rem;
+    line-height: 1.55rem;
+    color: #9698a6;
+}
+
+
+
+/* ARTICLE SECTION */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+
+.container h2 {
+    padding: 40px 50px 45px 0px;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: rgb(58, 58, 58);
+}
+
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    height: 510px;
+    width: 350px;
+    background-color: #fff;
+
+}
+
+
+.cards img {
+    height: 250px;
+    width: 100%;
+}
+
+
+
+.cards p {
+    margin: 18px 40px 0 30px;
+    line-height: 1.5rem;
+}
+
+
+
+.p-subhead {
+   font-size: 1.5em;
+   font-weight: 500;
+   color: rgb(58, 58, 58);
+}
+
+
+
+
+.p-subhead:hover {
+    cursor: pointer;
+    color: var(--Lime-Green);
+}
+
+
+
+.text-color {
+    color: rgb(158, 154, 154);
+}
+
+
+
+.cards {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-items: center;  */
+}
+
+
+
+/* FOOTER-SECTION */
+
+.footer {
+    background: #2d314d; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 36px 0;
+}   
+
+.left-part {
+    display: flex;
+    gap: 10rem;
+}
+
+
+
+.social-icons i{
+    color: #fff;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.social-icons i:hover {
+    cursor: pointer;
+    color: #43c54d;
+}
+
+
+.footer-list li {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 0.90rem;
+}
+
+.footer-list li:hover {
+    cursor: pointer;
+    color: #43c54d;
+} 
+
+.footer-social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.footer-button {
+    border: none;
+    border-radius: 5rem;
+    background: var(--linear-color);
+    color: white;
+    width: 10rem;
+    font-size: 0.8rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+
+.footer-button:hover {
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+    90deg, #32b5e9 0%, #43c54d 100%);  
+    opacity: 0.8;    
+}
+
+
+.footer-button:active {
+    color: #333;
+    transition: 0.6s;
+}
+
+
+
+.copyright-text {
+    color: #9698a6;
+}
+
+
+/* CONTRIBUTION */
+
+.contribution {
+    color: #fff;
+}
+
+.same {
+    color: #fff;
+    padding: 6px 8px;
+    transition: 0.8s;
+}
+
+.same:hover {
+    color: #43c54d;
+}
+
+
+
+
+
+
+
+/* Mobile View (1020px)*/
+
+@media(max-width: 1020px) {
+
+    /* HEADER SECTION */
+    
+    .header__link {
+        line-height: 3.5rem;
+    }
+
+    .header__burger-button {
+        width: 1rem;
+        height: 2rem;
+        background-image: url(images/icon-hamburger.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .header__burger-button-active {
+        background-image: url(images/icon-close.svg);
+    }
+
+    .header__menu {
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 5rem;
+        background: linear-gradient(
+        180deg, #2d314d 0%, rgba(45, 49, 77, 0) 100%);
+        top: 0;
+        left: 0;
+        opacity: 0; 
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+    }    
+
+    .header__menu-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        border-radius: 5px;
+        gap: 0;
+    }
+
+
+
+    /* ARTICLES SECTION  */
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+
+    .gradient-button {
+        display: none;
+    }
+
+
+
+    /* NEXT GENERATION DIGITAL BANKING SECTION */
+
+    .touhid-btn {
+        margin: auto;  
+    }
+
+
+    .section_content-first {
+        height: 974px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .section-first {
+        height: 800px;
+    }
+
+    .section-mockup {
+        /* display: none; */
+        position: absolute;
+        width: 458px;
+        margin-top: 0;
+        top: -80px;
+        left: 15px;
+    }
+
+    .section-text {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .first-title {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+
+    .section_p { 
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.4rem;
+    }
+
+
+
+
+    /* EASYBANK SECTION */
+
+    .section-header {
+        text-align: center;
+    }
+    
+    .section-boxes {
+        text-align: center;
+        justify-content: center;
+        gap: 2.5rem;
+
+    }
+
+    .section-first {
+        background-image: url(images/bg-intro-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-position: 4% 265%;
+    }
+
+    .section-hero {
+        background-image: none;
+    }
+
+
+
+
+    /* FOOTER-SECTION */
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* LEFT-PART */
+
+    .left-part {
+        flex-direction: column;
+        gap: 0rem;
+        text-align: center;
+    }
+
+    .footer-social-section {
+        gap: 2rem;
+    }
+
+    .social-icons {
+        margin-bottom: 30px;
+    }
+
+
+    /* RIGHT-PART */
+    .right-part {
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+}
+
+
+
+/* MOBILE VIEW (580PX) */
+
+@media(max-width: 580px) {
+
+    /* ARTICLE-SECTION */
+
+    .container h2 {
+        text-align: center;
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+
+    /* Next-GENERATION-SECTION  */
+
+    .section_p {
+        font-size: 0.8rem;
+    }
+
+    .touhid-btn {
+        margin: 10px 0;
+    }
+
+
+    .section-mockup {
+        display: none;
+        position: absolute;
+        width: auto;
+        margin: 0 auto;
+        top: -60px;
+        left: 0px;
+    }
+
+    .section-first {
+        background-image: url(images/bg-intro-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-position: 55% 265%;
+    }
+
+    /* CONTRIBUTION */
+    .contribution {
+        width: 300px;
+        line-height: 1.5rem;
+        /* text-align: center; */
+    }
+}

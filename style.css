@@ -95,6 +95,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    margin-left: 15rem;
 }
 
 
@@ -349,14 +350,12 @@ ul {
     padding: 4rem 0;
 }
 
-
 .container h2 {
     padding: 40px 50px 45px 0px;
     font-size: 2.5em;
     font-weight: 300;
     color: rgb(58, 58, 58);
 }
-
 
 .card-1,
 .card-2,
@@ -368,20 +367,15 @@ ul {
 
 }
 
-
 .cards img {
     height: 250px;
     width: 100%;
 }
 
-
-
 .cards p {
     margin: 18px 40px 0 30px;
     line-height: 1.5rem;
 }
-
-
 
 .p-subhead {
    font-size: 1.5em;
@@ -389,27 +383,19 @@ ul {
    color: rgb(58, 58, 58);
 }
 
-
-
-
 .p-subhead:hover {
     cursor: pointer;
     color: var(--Lime-Green);
 }
 
-
-
 .text-color {
     color: rgb(158, 154, 154);
 }
-
-
 
 .cards {
     display: grid;
     gap: 2.5rem;
     grid-template-columns: repeat(4, 1fr);
-    /* justify-items: center;  */
 }
 
 
@@ -546,10 +532,12 @@ ul {
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
+        z-index: 10;
     }
 
     .header__burger-button-active {
         background-image: url(images/icon-close.svg);
+        z-index: 10;
     }
 
     .header__menu {
